@@ -14,7 +14,9 @@ const Contact = () => {
     email: "",
     message: "",
   });
-
+// template_xb20m59
+// service_rgomgv9
+// EUXgiZudrZifCGmoY
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -33,16 +35,15 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        'service_rgomgv9','template_3h589vs',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Mohammad Shahansha",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "mdshahansha44411@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+       'EUXgiZudrZifCGmoY'
       )
       .then(
         () => {
@@ -59,7 +60,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          alert("Ahh, something went wrong. Please try again*******.");
         }
       );
   };
